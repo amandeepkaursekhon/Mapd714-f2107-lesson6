@@ -193,6 +193,9 @@
                                     <constraint firstAttribute="height" constant="30" id="kMS-C5-ccN"/>
                                 </constraints>
                                 <state key="normal" title="Select"/>
+                                <connections>
+                                    <action selector="OnButtonPressed:" destination="lFD-uZ-Ltj" eventType="touchUpInside" id="5Q7-01-yE7"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -206,6 +209,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Date" image="clockicon" id="nbe-O8-lUn"/>
+                    <connections>
+                        <outlet property="datePicker" destination="C2T-xx-nxD" id="phe-fA-YUp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DlY-PX-XVI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -214,7 +220,6 @@
         <!--View Controller-->
         <scene sceneID="Cyq-qi-Zfe">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1xd-ea-Lfh" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tabBarController id="OWe-EH-Qhm" customClass="ViewController" customModule="MAPD714_F2017_Lesson6" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="kbd-dK-nbU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
@@ -229,6 +234,7 @@
                         <segue destination="ht9-Gh-kqx" kind="relationship" relationship="viewControllers" id="mIQ-zx-BI9"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1xd-ea-Lfh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1095" y="-221"/>
         </scene>
